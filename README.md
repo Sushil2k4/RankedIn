@@ -11,6 +11,11 @@ Developed for the **Samsung Innovation Campus (SIC) Hackathon**, **RankedIn** is
 
 ---
 
+---
+## 🌐 Live Demo
+[Visit the RankedIn Platform](https://ranked-in.vercel.app/)
+---
+
 ## 🚀 Key Features Demonstrated
 
 ### 🏛️ Program Architecture & OOP Models
