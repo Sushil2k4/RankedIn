@@ -1,6 +1,13 @@
 # RankedIn: AI-Powered Resume Ranking & Job Match Engine
 
-RankedIn is a full-stack automated recruitment and candidate-vetting platform designed specifically for the SIC Hackathon. Unlike visual-only keyword keyword screeners, RankedIn evaluates technical candidates objectively by utilizing structured mathematical alignment scores, manual O(N log N) Stable Merge Sort, O(1) Inverted Index Hash Lookups, and O(log N) Binary Experience Filters over locally persisted records.
+Developed for the **Samsung Innovation Campus (SIC) Hackathon**, **RankedIn** is a full-stack automated recruitment and candidate-vetting platform. Unlike visual-only keyword screeners, RankedIn evaluates technical candidates objectively by utilizing structured mathematical alignment scores, manual $O(N \log N)$ Stable Merge Sort, $O(1)$ Inverted Index Hash Lookups, and $O(\log N)$ Binary Experience Filters over locally persisted records.
+
+---
+
+## 👥 Our Team
+* **Sushil Kumar Mishra**
+* **Achintya Dwivedi**
+* **Gautam Prasad Upadhyay**
 
 ---
 
@@ -10,7 +17,7 @@ RankedIn is a full-stack automated recruitment and candidate-vetting platform de
 Each candidate profile and job opening is governed by explicit typed constructors (`Candidate` and `Job` models), maintaining runtime data validation, sanitizing incoming values, and ensuring secure file synchronization.
 
 ### 🧮 Objective Vetting Mathematics
-The candidate alignment scoring formula matches your recruitment specifications exactly:
+The candidate alignment scoring formula matches our recruitment specifications:
 1. **Skills Alignment (70%)**  
    $$\text{Skills Contribution} = \left( \frac{\text{Skills Matched}}{\text{Required Skills}} \right) \times 70.0$$
 2. **Experience Suitability (20%)**  
@@ -27,16 +34,16 @@ The candidate alignment scoring formula matches your recruitment specifications 
 
 ### 🧬 Manual Data Structures & Algorithms (Bilingual Symmetry)
 RankedIn bypasses native library wrappers to guarantee technical depth of manual implementations:
-* **Merge Sort Ranking ($O(N \log N)$ Stable)**: Dividers candidate matrices into recursive binary split blocks. Ensures deterministic stable alignments under leaderboard rankings.
+* **Merge Sort Ranking ($O(N \log N)$ Stable)**: Divides candidate matrices into recursive binary split blocks. Ensures deterministic stable alignments under leaderboard rankings.
 * **Inverted Index Hashing ($O(1)$ Average)**: Maps skills keywords into mapped index hashes, returning matched candidate ID lists in constant sub-linear periods.
 * **Binary Search experience lower-bounds ($O(\log N)$)**: Maps range filters on sorted subsets.
 
 ### 🤖 Gemini AI Structured Parsing
-Integrates the `gemini-3.5-flash` model utilizing constrained schema responses, mapping unstructured text resumes directly into validated structures. Falling back gracefully to a robust, regex-pattern matched compiler in air-gapped systems.
+Integrates the `gemini-3.5-flash` model utilizing constrained schema responses, mapping unstructured text resumes directly into validated structures. Falls back gracefully to a robust, regex-pattern matched compiler in air-gapped systems.
 
 ---
 
-## 📂 Project Structures
+## 📂 Project Structure
 
 ```
 ├── data/
@@ -65,22 +72,22 @@ Integrates the `gemini-3.5-flash` model utilizing constrained schema responses, 
 
 ---
 
-## 🛠️ Instructions for Running Applications
+## 🛠️ Instructions for Running the Application
 
-### Option A: Testing Interactive Python CLI Controller
-1. Open up your terminal environment and run:
+### Option A: Interacting with the Premium React SaaS Dashboard
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+2. **Start the Web App (Server + Frontend Middleware)**
+   ```bash
+   npm run dev
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Option B: Testing Interactive Python CLI Controller
+1. Run the script:
    ```bash
    python app.py
    ```
-2. Navigate user prompts to parse resumes, rank applicants, trigger skill searches, inspect metrics, or save data updates directly.
-
-### Option B: Interacting with the Premium React SaaS Dashboard
-1. The app compiles and serves on port `3000` behind the reverse-proxy.
-2. The UI features:
-   - **Dashboard Home**: Explores live synced KPIs and navigation prompts.
-   - **Extract Resume**: Input raw resumes to dry-run extraction with Gemini AI or Regex fallbacks. Preview profile drafts before saving them back into `candidates.csv`.
-   - **Candidates / Jobs Database**: Interactive tabular grids supporting searching, inline sorting, and manual additions.
-   - **Candidate Ranking**: Highlight core profiles based on Merge Sort arrays.
-   - **Indexed Search**: Test logarithmic search limits first-hand.
-   - **Talent Analytics**: High fidelity SVG charting of data distributions in professional glassmorphic widgets.
-   - **Skill Gaps and Recommendor modules**: Pinpoints path courses based on vacancy offsets.
+2. Follow the user prompts to parse resumes, rank applicants, trigger skill searches, inspect metrics, or save data updates directly.
