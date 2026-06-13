@@ -57,7 +57,11 @@ const RANKINGS_FILE = path.join(process.cwd(), "data/rankings.json");
 function ensureDataDir() {
   const dataDir = path.join(process.cwd(), "data");
   if (!fs.existsSync(dataDir)) {
-    fs.mkdirSync(dataDir, { recursive: true });
+    try {
+      fs.mkdirSync(dataDir, { recursive: true });
+    } catch (err) {
+      console.warn("Failed to create data directory (expected in read-only envs like Vercel):", err);
+    }
   }
 }
 
