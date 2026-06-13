@@ -7,7 +7,6 @@
 import express from "express";
 import path from "path";
 import fs from "fs";
-import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
 
@@ -917,6 +916,7 @@ app.get("/api/resume-score", (req, res) => {
 // Serve frontend asset fallback
 async function startServer() {
   if (process.env.NODE_ENV !== "production") {
+    const { createServer as createViteServer } = await import("vite");
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa"
