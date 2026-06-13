@@ -173,33 +173,41 @@ function loadJobs(): JobData[] {
 
 // Saving helpers
 function saveCandidates(candidates: CandidateData[]) {
-  ensureDataDir();
-  const header = "candidate_id,name,education,skills,experience,certifications\n";
-  const escapeCsv = (str: string) => {
-    if (str.includes(",") || str.includes('"')) {
-      return `"${str.replace(/"/g, '""')}"`;
-    }
-    return str;
-  };
-  const rows = candidates.map(c => {
-    return `${c.candidate_id},${escapeCsv(c.name)},${escapeCsv(c.education)},${escapeCsv(c.skills.join(";"))},${c.experience},${escapeCsv(c.certifications.length > 0 ? c.certifications.join(";") : "None")}`;
-  }).join("\n");
-  fs.writeFileSync(CANDIDATES_FILE, header + rows, "utf-8");
+  try {
+    ensureDataDir();
+    const header = "candidate_id,name,education,skills,experience,certifications\n";
+    const escapeCsv = (str: string) => {
+      if (str.includes(",") || str.includes('"')) {
+        return `"${str.replace(/"/g, '""')}"`;
+      }
+      return str;
+    };
+    const rows = candidates.map(c => {
+      return `${c.candidate_id},${escapeCsv(c.name)},${escapeCsv(c.education)},${escapeCsv(c.skills.join(";"))},${c.experience},${escapeCsv(c.certifications.length > 0 ? c.certifications.join(";") : "None")}`;
+    }).join("\n");
+    fs.writeFileSync(CANDIDATES_FILE, header + rows, "utf-8");
+  } catch (err) {
+    console.error("Failed to write candidates CSV on server:", err);
+  }
 }
 
 function saveJobs(jobs: JobData[]) {
-  ensureDataDir();
-  const header = "job_id,title,required_skills,minimum_experience,preferred_education\n";
-  const escapeCsv = (str: string) => {
-    if (str.includes(",") || str.includes('"')) {
-      return `"${str.replace(/"/g, '""')}"`;
-    }
-    return str;
-  };
-  const rows = jobs.map(j => {
-    return `${j.job_id},${escapeCsv(j.title)},${escapeCsv(j.required_skills.join(";"))},${j.minimum_experience},${escapeCsv(j.preferred_education)}`;
-  }).join("\n");
-  fs.writeFileSync(JOBS_FILE, header + rows, "utf-8");
+  try {
+    ensureDataDir();
+    const header = "job_id,title,required_skills,minimum_experience,preferred_education\n";
+    const escapeCsv = (str: string) => {
+      if (str.includes(",") || str.includes('"')) {
+        return `"${str.replace(/"/g, '""')}"`;
+      }
+      return str;
+    };
+    const rows = jobs.map(j => {
+      return `${j.job_id},${escapeCsv(j.title)},${escapeCsv(j.required_skills.join(";"))},${j.minimum_experience},${escapeCsv(j.preferred_education)}`;
+    }).join("\n");
+    fs.writeFileSync(JOBS_FILE, header + rows, "utf-8");
+  } catch (err) {
+    console.error("Failed to write jobs CSV on server:", err);
+  }
 }
 
 // HR Math Alignment Logic
@@ -927,4 +935,8 @@ async function startServer() {
   });
 }
 
-startServer();
+if (!process.env.VERCEL) {
+  startServer();
+}
+
+export default app;
