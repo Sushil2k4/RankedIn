@@ -1,53 +1,89 @@
 /* Custom Styles for RankedIn SaaS HR Engine Dashboard */
 
-/* Dark Modern Glow Backgrounds */
+/* Dark Modern Glow Backgrounds with Rich Cosmic Gradient */
 .bg-cosmic-glow {
-  background: radial-gradient(circle at 50% 10%, rgba(20, 20, 28, 1) 0%, rgba(10, 10, 12, 1) 100%);
+  background-color: #08080c;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 55%), 
+    radial-gradient(at 50% 0%, hsla(263, 60%, 15%, 0.2) 0, transparent 60%),
+    radial-gradient(at 100% 0%, hsla(217, 60%, 12%, 0.25) 0, transparent 55%),
+    radial-gradient(at 80% 80%, hsla(263, 50%, 8%, 0.4) 0, transparent 100%),
+    radial-gradient(at 50% 100%, hsla(245, 40%, 6%, 1) 0, transparent 100%);
+  background-attachment: fixed;
 }
 
 .aurora-accent-1 {
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 65%);
 }
 
 .aurora-accent-2 {
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 65%);
 }
 
-/* Glassmorphism containers */
+/* Glassmorphism containers with subtle borders */
 .glass-container {
-  background: rgba(17, 17, 24, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(13, 13, 20, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.45);
 }
 
 .glass-card {
-  background: rgba(25, 25, 35, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  background: rgba(22, 22, 32, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.3), transparent);
+  transition: all 0.6s ease;
+  transform: translateX(-100%);
 }
 
 .glass-card:hover {
   border-color: rgba(139, 92, 246, 0.25);
-  transform: translateY(-2px);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.1);
+  background: rgba(26, 26, 40, 0.48);
+  transform: translateY(-4px);
+  box-shadow: 
+    0 15px 35px rgba(139, 92, 246, 0.06), 
+    0 0 30px rgba(99, 102, 241, 0.04),
+    0 1px 0 rgba(255, 255, 255, 0.08) inset;
+}
+
+.glass-card:hover::before {
+  transform: translateX(100%);
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.7), transparent);
 }
 
 /* Interactive Input Controls */
 .glass-input {
-  background: rgba(10, 10, 15, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(7, 7, 10, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   color: #f3f4f6;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .glass-input:focus {
-  border-color: #8b5cf6;
-  background: rgba(15, 15, 25, 0.8);
+  border-color: rgba(139, 92, 246, 0.55);
+  background: rgba(12, 12, 20, 0.85);
   outline: none;
-  box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+  box-shadow: 
+    0 0 0 3px rgba(139, 92, 246, 0.15), 
+    0 0 20px rgba(139, 92, 246, 0.15),
+    inset 0 1px 2px rgba(0,0,0,0.8);
 }
 
 /* Scrollbars styling */
@@ -61,7 +97,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.3);
+  background: rgba(139, 92, 246, 0.25);
   border-radius: 4px;
 }
 
@@ -69,23 +105,53 @@
   background: rgba(139, 92, 246, 0.5);
 }
 
-/* Custom visual badge states */
+/* Custom visual badge states with subtle blur styling */
 .badge-matched {
-  background: rgba(16, 185, 129, 0.12);
-  color: #10b981;
-  border: 1px solid rgba(16, 185, 129, 0.25);
+  background: rgba(16, 185, 129, 0.08);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  backdrop-filter: blur(4px);
 }
 
 .badge-missing {
-  background: rgba(239, 68, 68, 0.12);
-  color: #ef4444;
-  border: 1px solid rgba(239, 68, 68, 0.25);
+  background: rgba(239, 68, 68, 0.08);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.18);
+  backdrop-filter: blur(4px);
+}
+
+/* Dynamic glow animations for border overlays */
+.border-gradient-glow {
+  position: relative;
+}
+
+.border-gradient-glow::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6, #10b981, #8b5cf6);
+  background-size: 400% 400%;
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0.12;
+  transition: opacity 0.3s ease;
+}
+
+.border-gradient-glow:hover::after {
+  opacity: 0.3;
+  animation: gradient-glow 6s linear infinite;
+}
+
+@keyframes gradient-glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Clean typography spacing */
 .display-title {
   font-family: 'Space Grotesk', system-ui, sans-serif;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .data-mono {

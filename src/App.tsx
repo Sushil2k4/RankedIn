@@ -113,7 +113,7 @@ export default function App() {
             </div>
             <div className="space-y-0.5">
               <h1 className="font-extrabold text-white tracking-tight leading-none text-xl display-title">RankedIn</h1>
-              <span className="text-[10px] text-slate-500 tracking-wider font-semibold block uppercase">AI Screen System</span>
+              <span className="text-[9px] text-slate-500 tracking-wider font-semibold block uppercase">Job Matching Engine</span>
             </div>
           </div>
 

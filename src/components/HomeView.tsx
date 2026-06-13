@@ -62,11 +62,11 @@ export default function HomeView({ analytics, setView }: HomeViewProps) {
         
         <div className="relative z-10 max-w-2xl space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20">
-            <TrendingUp size={12} /> Live Hackathon Demo App Active
+            <TrendingUp size={12} /> SIC Hackathon Submission Blueprint
           </div>
           
           <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 leading-tight tracking-tight display-title">
-            Automate Talent Discovery with RankedIn
+            RankedIn: Resume Ranking and Job Matching Engine
           </h1>
           
           <p className="text-slate-400 text-base leading-relaxed">

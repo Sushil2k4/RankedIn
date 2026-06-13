@@ -43,10 +43,10 @@ export default function AboutView() {
         <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 rounded-full bg-violet-600/10 blur-3xl aurora-accent-1" />
         <div className="relative z-10 max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
-            <Terminal size={12} /> SEC Hackathon Submission Blueprint
+            <Terminal size={12} /> SIC Hackathon Submission Blueprint
           </div>
           <h2 className="text-3xl font-bold text-white display-title">
-            RankedIn: AI-Powered Resume Ranking & Job Match Engine
+            RankedIn: Resume Ranking and Job Matching Engine
           </h2>
           <p className="text-slate-400 text-sm leading-relaxed">
             RankedIn is a modern HR-Tech SaaS dashboard built from scratch to address bias, sluggish manual screenings, and unscientific candidate-to-job matches. Rather than evaluating resumes based on visual keywords, RankedIn applies formal mathematical alignment criteria (70% Skills, 20% Experience, 10% Academic degree tiers) over sandboxed candidate files.
