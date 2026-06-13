@@ -1,0 +1,6 @@
+{
+  "name": "RankedIn",
+  "description": "AI-Powered Resume Ranking & Job Matching Engine with dark glassmorphic talent analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,138 @@
+{
+  "job_id": "JOB03",
+  "job_title": "Data Scientist",
+  "ranks": [
+    {
+      "rank": 1,
+      "candidate_id": "CANT013",
+      "name": "Mia Takahashi",
+      "score": 100
+    },
+    {
+      "rank": 2,
+      "candidate_id": "CANT005",
+      "name": "Aisha Peterson",
+      "score": 86
+    },
+    {
+      "rank": 3,
+      "candidate_id": "CANT007",
+      "name": "Sophia Kim",
+      "score": 86
+    },
+    {
+      "rank": 4,
+      "candidate_id": "CANT019",
+      "name": "Zoe Patel",
+      "score": 86
+    },
+    {
+      "rank": 5,
+      "candidate_id": "CANT003",
+      "name": "Emily Rodriguez",
+      "score": 81
+    },
+    {
+      "rank": 6,
+      "candidate_id": "CANT001",
+      "name": "Sarah Jenkins",
+      "score": 72
+    },
+    {
+      "rank": 7,
+      "candidate_id": "CANT012",
+      "name": "William Fletcher",
+      "score": 66
+    },
+    {
+      "rank": 8,
+      "candidate_id": "CANT011",
+      "name": "Olivia Janssen",
+      "score": 58
+    },
+    {
+      "rank": 9,
+      "candidate_id": "CANT008",
+      "name": "Alexander Wright",
+      "score": 53
+    },
+    {
+      "rank": 10,
+      "candidate_id": "CANT004",
+      "name": "Marcus Thompson",
+      "score": 48
+    },
+    {
+      "rank": 11,
+      "candidate_id": "CANT020",
+      "name": "Ethan Brooks",
+      "score": 43
+    },
+    {
+      "rank": 12,
+      "candidate_id": "CANT002",
+      "name": "David Chen",
+      "score": 39
+    },
+    {
+      "rank": 13,
+      "candidate_id": "CANT014",
+      "name": "Lucas Silva",
+      "score": 39
+    },
+    {
+      "rank": 14,
+      "candidate_id": "CANT016",
+      "name": "Ryan Gallagher",
+      "score": 39
+    },
+    {
+      "rank": 15,
+      "candidate_id": "CANT017",
+      "name": "Grace Anand",
+      "score": 39
+    },
+    {
+      "rank": 16,
+      "candidate_id": "CANT018",
+      "name": "Tyler Nguyen",
+      "score": 39
+    },
+    {
+      "rank": 17,
+      "candidate_id": "CANT009",
+      "name": "Isabella Rossi",
+      "score": 34
+    },
+    {
+      "rank": 18,
+      "candidate_id": "CANT691",
+      "name": "SUSHIL KUMAR MISHRA",
+      "score": 33
+    },
+    {
+      "rank": 19,
+      "candidate_id": "CANT503",
+      "name": "SUSHIL KUMAR MISHRA",
+      "score": 33
+    },
+    {
+      "rank": 20,
+      "candidate_id": "CANT015",
+      "name": "Chloe Dubois",
+      "score": 25
+    },
+    {
+      "rank": 21,
+      "candidate_id": "CANT010",
+      "name": "Jacob Martinez",
+      "score": 20
+    },
+    {
+      "rank": 22,
+      "candidate_id": "CANT006",
+      "name": "Liam OConnor,B.S. in Information Systems,JavaScript;React;Node.js;Express;SQL;HTML;CSS,2,React Nanodegree",
+      "score": 0
+    }
+  ]
+}

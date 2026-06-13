@@ -1,0 +1,6 @@
+job_id,title,required_skills,minimum_experience,preferred_education
+JOB01,Senior Backend Engineer (Python),Python;SQL;Docker;AWS;APIs,5,B.S. in Computer Science
+JOB02,Frontend React Developer,JavaScript;React;HTML;CSS;Git,3,B.S. in Computer Science
+JOB03,Data Scientist,Python;Pandas;NumPy;SQL;Machine Learning,4,M.S. in Computer Science
+JOB04,Full Stack Software Engineer,JavaScript;React;Node.js;SQL;AWS;Docker,4,B.S. in Computer Science
+JOB05,Machine Learning Engineer,Python;Machine Learning;TensorFlow;PyTorch;Git,5,M.S. in Artificial Intelligence

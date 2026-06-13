@@ -1,0 +1,23 @@
+candidate_id,name,education,skills,experience,certifications
+CANT001,Sarah Jenkins,M.S. in Computer Science,Python;SQL;APIs;Pandas;Git;AWS,6,AWS Certified Developer
+CANT002,David Chen,B.S. in Software Engineering,Java;Spring Boot;Docker;SQL;C++;Git,4,Oracle Certified Professional Java
+CANT003,Emily Rodriguez,B.S. in Data Science,Python;R;Pandas;NumPy;SQL;Data Analysis;Tableau,5,Google Advanced Data Analytics
+CANT004,Marcus Thompson,B.S. in Computer Engineering,C++;Python;Git;Docker;Embedded Systems;SQL,3,Professional Scrum Master
+CANT005,Aisha Peterson,M.S. in Artificial Intelligence,Python;Machine Learning;TensorFlow;PyTorch;Pandas;SQL;AWS,7,AWS Machine Learning Specialty
+CANT006,"Liam OConnor,B.S. in Information Systems,JavaScript;React;Node.js;Express;SQL;HTML;CSS,2,React Nanodegree",Unknown,,0,None
+CANT007,Sophia Kim,PhD in Computer Science,Python;C++;Algorithms;Machine Learning;NumPy;Pandas,8,Google Professional Data Engineer
+CANT008,Alexander Wright,B.S. in Cybersecurity,Python;Linux;Docker;AWS;Git;Security;SQL,5,CISSP;CompTIA Security+
+CANT009,Isabella Rossi,B.S. in Computer Science,Java;JavaScript;React;SQL;AWS;Git,3,AWS Certified Cloud Practitioner
+CANT010,Jacob Martinez,High School Graduate (Self-taught),JavaScript;Node.js;React;Express;Docker;Git,4,Meta Front-End Developer Certificate
+CANT011,Olivia Janssen,M.S. in Software Engineering,Python;Java;SQL;Kubernetes;Docker;AWS;Git,6,Certified Kubernetes Administrator
+CANT012,William Fletcher,B.S. in Computer Science,Python;Pandas;NumPy;SQL;Data Analysis;Streamlit,1,Google Data Analytics Professional
+CANT013,Mia Takahashi,PhD in Mathematics,Python;R;NumPy;Machine Learning;Pandas;SQL,4,Stanford ML Certificate
+CANT014,Lucas Silva,B.S. in Computer Science,C++;Java;Algorithms;Git;SQL;Docker,5,None
+CANT015,Chloe Dubois,M.S. in Human-Computer Interaction,JavaScript;React;HTML;CSS;Figma;Git,3,UX Design Certificate
+CANT016,Ryan Gallagher,B.S. in Computer Science,Python;JavaScript;Docker;Kubernetes;AWS;Git,7,AWS Certified SysOps Administrator
+CANT017,Grace Anand,B.S. in Information Technology,Java;Spring Boot;SQL;Maven;APIs;Git,4,Oracle Certified Associate Java
+CANT018,Tyler Nguyen,B.S. in Computer Science,JavaScript;Node.js;Express;React;SQL;Docker;AWS;Git,5,AWS Solutions Architect
+CANT019,Zoe Patel,M.S. in Computer Science,Python;SQL;Docker;AWS;Pandas;NumPy;Git;APIs,6,AWS Certified Developer
+CANT020,Ethan Brooks,B.S. in Computer Science,C++;Python;Java;Algorithms;Git;SQL,2,None
+CANT691,SUSHIL KUMAR MISHRA,Bachelor of Technology in Computer Science and Engineering 2,Python;Java;JavaScript;SQL;React;Git;APIs,0,None
+CANT503,SUSHIL KUMAR MISHRA,Bachelor of Technology in Computer Science and Engineering 2,Python;Java;JavaScript;SQL;React;Git;APIs,0,None
