@@ -4,10 +4,39 @@ Developed for the **Samsung Innovation Campus (SIC) Hackathon**, **RankedIn** is
 
 ---
 
-## 👥 Our Team
-* **Sushil Kumar Mishra**
-* **Achintya Dwivedi**
-* **Gautam Prasad Upadhyay**
+## 👥 Hackathon Team Members & Individual Contributions
+
+Our project represents a collaborative effort with distinct areas of ownership. Below is the breakdown of responsibilities and individual module contributions:
+
+### 🛠️ Sushil Kumar Mishra — Full-Stack Architecture, API Integration & Synchronization
+* **Express API backend (`server.ts`)**: Built and configured the Express application routing, middleware, and request/response pipelines.
+* **Database & File Synchronization**: Implemented local CSV storage sync logic to read and write records to `data/candidates.csv` and `data/jobs.csv` with safe formatting and error boundaries.
+* **Dashboard Client Integration (`src/App.tsx`)**: Configured the frontend-to-backend communication layer, enabling real-time UI state refreshes from server responses.
+* **Serverless Deployment configuration**: Set up and configured `vercel.json` routing rewrites and `api/index.ts` adapters for serverless deployment.
+
+### 🤖 Achintya Dwivedi — Artificial Intelligence Services, UI Features & Parsers
+* **Gemini AI Integration**: Coded the `gemini-3.5-flash` client SDK calls in `server.ts` using structured parsing JSON schemas to extract developer details.
+* **Heuristic Parser Fallback**: Developed the regular expression parser and string compiler fallback mechanisms to process resumes in offline/air-gapped systems.
+* **Dashboard Visual Elements**: Implemented interactive React views, including the **Extract Resume** interface (`src/components/UploadView.tsx`) and the SVG distributions dashboard (**Talent Analytics** widget at `src/components/AnalyticsView.tsx`).
+
+### 🧮 Gautam Prasad Upadhyay — Algorithmic Logic, Vetting Models & Core Mathematics
+* **Custom Algorithms & Data Structures**: Hand-crafted the core algorithms from scratch to prove technical depth:
+  * **Stable Merge Sort ($O(N \log N)$)**: Written manually to rank candidate score matrices deterministically without native sort instability (`src/services/ranking.py`).
+  * **Inverted Index Hashing ($O(1)$)**: Programmed skills inverted hashing maps for instant filter operations.
+  * **Binary Search ($O(\log N)$)**: Coded the experience years lower-bound quick-finder.
+* **Alignment Math & Vetting**: Formulated the weighted HR scoring models (Skills 70%, Experience 20%, Education 10%).
+* **Feature Services**: Implemented the standalone **Skill Gap Analysis** courses suggester (`src/services/skill_gap.py`) and **Resume Structural Strength Evaluator** (`src/services/resume_score.py`).
+
+---
+
+## 🔗 How it all Integrates (Symmetry & Flow)
+RankedIn behaves as a single cohesive unit:
+1. **Frontend Trigger**: The React frontend (`App.tsx`) triggers requests based on user actions (e.g., inputting a resume, selecting a job, or setting search filters).
+2. **API Delegation**: The Express API router (`server.ts`) captures the action and directs it to the appropriate subsystem:
+   - Resumes go through **Achintya's AI/Regex parsing engine**.
+   - Filtering operations invoke **Gautam's Inverted Index & Binary Search services**.
+   - Profile sorting redirects into **Gautam's Merge Sort service**.
+3. **Data Sync**: Read and write transactions are synchronized against the CSV/JSON data files using **Sushil's storage routines**, keeping the data pool and CLI console inputs aligned in real time.
 
 ---
 
